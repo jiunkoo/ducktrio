@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>main</title>
+    </head>
+    <body>
+        <header>
+            <div class="search-box">
+                <span>덕트리오</span>
+                <input>
+                <button class="search-btn">검색</button>
+                <button class="login-btn">로그인</button>
+                <button class="list-btn">목록</button>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="description-box">
+                    <span>
+                        덕트리오는 웹툰과 웹소설 검색 및 추천 사이트입니다.<br/>
+                        좋아하는 웹툰을 추천하고 또 추천받아 보세요!
+                    </span>
+                </div>
+                <div class="web-content-box">
+                    <div class="filter-bar">
+                        <ul class="filter-tabs">
+                            <li class="tab-all current" data-tab="tab-all">전체</li>
+                            <li class="tab-webtoon" data-tab="tab-webtoon">웹툰</li>
+                            <li class="tab-webnovel" data-tab="tab-webnovel">웹소설</li>
+                        </ul>
+                        <div class="dropdown-background">
+                            <ul class="filter-dropdown">
+                                <li>검색필터</li>
+                                <li>연재상태 ></li>
+                                <li>장르 ></li>
+                                <li>편수 ></li>
+                                <li>연령 ></li>
+                                <li class="filter-price">가격 ></li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title-box">
+                        <div class="title-option">
+                            <a>총 12,345개 작품</a>
+                            <span>정렬 기준:랜덤</span>
+                        </div>
+                        <div class="title-list">
+                            <div id="tab-all" class="tab-content current">전체 목록입니다.</div>
+                            <div id="tab-webtoon" class="tab-content">웹툰 컨텐츠입니다.</div>
+                            <div id="tab-webnovel" class="tab-content">웹소설 컨텐츠입니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <style>
+            html{
+                background: #efefef;
+            }
+            body{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            header{
+                padding: 20px;
+                background: #ffd93d;
+            }
+            .search-box{
+                display: flex;
+                min-height: 50px;
+                justify-content: center;
+            }
+            .search-box span{
+                width: 12%;
+                font-weight: bolder;
+                font-size: 30px;
+                line-height: 50px;
+                text-align: center;
+            }
+            .search-box input{
+                width: 68%;
+                margin-left: 15px;
+                margin-right: 15px;
+                border: 1px solid;
+                border-radius: 10px;
+                font-size: 24px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .search-box button{
+                margin-left: 5px;
+                margin-right: 5px;
+                background: #fff;
+                border: 1px solid;
+                border-radius: 10px;
+            }
+            .search-box button:hover{
+                background: #acacac;
+                transition: 0.2s;
+            }
+            .search-btn{
+                width: 6%;
+            }
+            .login-btn{
+                width: 8%;
+            }
+            .list-btn{
+                width: 6%;
+            }
+            .description-box{
+                display: flex;
+                padding: 20px;
+                background: #ffffff;
+            }
+            .description-box span{
+                font-size: 20px;
+            }
+            .filter-bar{
+                display: flex;
+                min-height: 50px;
+                padding: 10px;
+                background: #ffd93d;
+            }
+            ul.filter-tabs{
+                list-style: none;
+            }
+            ul.filter-tabs li{
+                display: inline-block;
+                margin: 0 5px 0 5px;
+                font-size: 24px;
+            }
+            ul.filter-tabs li.current{
+                font-weight: bolder;
+                border-bottom: 5px solid;
+            }
+            .tab-content{
+                display: none;
+            }
+            .tab-content.current{
+                display: inherit;
+            }
+            ul.filter-dropdown{
+                list-style: none;
+            }
+            ul.filter-dropdown li{
+                display: inline-block;
+                margin: 0 5px 0 5px;
+                font-size: 20px;
+            }
+            .dropdown-background{
+                display: flex;
+                justify-content: center;
+            }
+            .title-option{
+                padding: 20px;
+                background: #cdcdcd;
+                vertical-align: center;
+            }
+            .title-option a{
+                font-size: 18px;
+            }
+            .title-option span{
+                font-size: 18px;
+                float: right;
+            }
+            .title-list{
+                min-height: 700px;
+                padding: 20px;
+                background: #fff;
+            }
+        </style>
+        <script>
+            function tabClick(e){
+                const tab = document.querySelector(`div[]`);
+            }
+        </script>
+    </body>
+</html>
