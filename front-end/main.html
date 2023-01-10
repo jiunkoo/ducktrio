@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta
+            charset="UTF-8"
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <title>main</title>
         <link rel="stylesheet" href="style-main.css">
     </head>
     <body>
-        <header>
-            <div class="search-box">
-                <span>덕트리오</span>
-                <input placeholder="웹툰 또는 웹소설 검색">
-                <button class="search-btn">검색</button>
-                <button class="login-btn">로그인</button>
-                <button class="list-btn">목록</button>
-            </div>
-        </header>
-        <main>
+        <div class="container">
+            <header class="global-header">
+                <div class="search-box">
+                    <span>덕트리오</span>
+                    <input placeholder="웹툰 또는 웹소설 검색">
+                    <button class="search-btn">검색</button>
+                    <button class="login-btn">로그인</button>
+                    <button class="list-btn">목록</button>
+                </div>
+            </header>
             <div class="main">
                 <div class="description-box">
                     <span>
@@ -55,16 +58,54 @@
                         <div class="title-list">
                             <div class="tab-contents">
                                 <div id="tab-all" class="tab-content tab-current">전체 목록입니다.</div>
-                                <div id="tab-webtoon" class="tab-content">웹툰 컨텐츠입니다.</div>
-                                <div id="tab-webnovel" class="tab-content">웹소설 컨텐츠입니다.</div>    
+                                <div id="tab-webtoon" class="tab-content">
+                                    <div class="webtoon-title-grid">
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon1"></a>
+                                            <img src="https://comicthumb-phinf.pstatic.net/20150621_299/pocket_1434825533458Sy13K_JPEG/image.JPEG?type=m260"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon2"></a>
+                                            <img src="https://comicthumb-phinf.pstatic.net/20180801_223/pocket_1533131017116SpHgl_JPEG/_690x1000.jpg?type=m260"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon3"></a>
+                                            <img src="https://dn-img-page.kakao.com/download/resource?kid=3rbLr/hzHNvJwfBT/dEwOCYVcvmKQs5LCXKcKS1&filename=th3"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon4"></a>
+                                            <img src="https://dn-img-page.kakao.com/download/resource?kid=opTvi/hzmU2mQQ4L/P5na5VTSpO9aLzCOGjZQo1&filename=th3"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon5"></a>
+                                            <img src="https://dn-img-page.kakao.com/download/resource?kid=cBTknD/hzHNw2iyay/F32qp26CJfKluAHvENIc1K&filename=th3"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon6"></a>
+                                            <img src="https://ccdn.lezhin.com/v2/comics/99/images/tall.webp?updated=1667972998917&width=354"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon7"></a>
+                                            <img src="https://ccdn.lezhin.com/v2/comics/6719108801691648/images/tall.webp?updated=1670907313731&width=354"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon8"></a>
+                                            <img src="https://ccdn.lezhin.com/v2/comics/6043385870483456/images/tall.webp?updated=1671608892516&width=354"/>
+                                        </div>
+                                        <div class="webtoon-title-item">
+                                            <a href="#webtoon9"></a>
+                                            <img src="https://ccdn.lezhin.com/v2/comics/5310249108766720/images/tall.webp?updated=1661763987482&width=354"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-webnovel" class="tab-content">웹소설 컨텐츠입니다.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-        </footer>
+        </div>
+        <footer></footer>
         <script src="script-main.js"></script>
     </body>
 </html>
