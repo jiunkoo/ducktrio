@@ -75,7 +75,7 @@ html{
 .description-box span{
     font-size: 20px;
 }
-.filter-bar{
+.nav-filter{
     display: flex;
     align-items: center;
     padding: 20px 30px 20px 30px;
@@ -98,19 +98,65 @@ html{
     border-bottom: 5px solid;
     color: #000;
 }
-ul.filter-dropdown{
+/* dropdown */
+.content-filter{
+    display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0 30px 0 30px;
 }
-ul.filter-dropdown li{
-    display: inline-block;
+.content-filter > li{
+    display: flex;
+    position: relative;
+    justify-content: center;
     margin: 0 10px 0 10px;
     font-size: 20px;
 }
-.dropdown-background{
+.content-filter > li > a{
+    text-decoration: none;
+    color: #000;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    padding: 20px;
+    border-radius: 15px;
+    transform: translateY(50px);
+    will-change: opacity;
+}
+.trigger-enter .dropdown{
+    display: block;
+}
+.trigger-enter-active .dropdown{
+    opacity: 1;
+    background: orange;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+}
+/* .arrow .dropdown{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background: grey;
+    transform: translateY(-50%) rotate(45deg);
+} */
+.age-list{
+    min-width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+.price-list{
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* dropdown */
 .title-option{
     padding: 20px 30px 20px 30px;
     background: #cdcdcd;
